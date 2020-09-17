@@ -1,13 +1,12 @@
 # qmk-infinity
 Uses QMK to build the data file to flash Input Club's Infinity 60%.
 
-### Syntax
+## Syntax
 
     docker run --rm -v <local-dir>:/data aquaron/qmk-infinity <file.c> [<keyboard>] [<target>]
 
 `<file.c>` is the name of the keymap file that contains the mapping to customize your keyboard layout.
-See https://github.com/qmk/qmk_firmware/tree/master/keyboards/infinity60
-for detailed information on how to customize the layout.
+See [qmk_firmware] for detailed information on how to customize the layout.
 Create a `keymap.c` file and put it in `<local-dir>` and issue this command to run:
 
     docker run --rm -v /tmp:/data aquaron/qmk-infinity keymap.c
@@ -22,3 +21,4 @@ the command below and check out `aquaron.c` in `/tmp`.
 
     docker run --rm -v /tmp:/data aquaron/qmk-infinity aquaron.c
 
+[qmk_firmware]: https://github.com/qmk/qmk_firmware/tree/master/keyboards/infinity60
