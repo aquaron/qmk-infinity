@@ -1,3 +1,5 @@
+![Docker](https://github.com/aquaron/qmk-infinity/workflows/Docker/badge.svg)
+
 # qmk-infinity
 Uses QMK to build the data file to flash Input Club's Infinity 60%.
 
